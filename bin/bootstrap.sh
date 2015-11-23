@@ -29,8 +29,8 @@ then
     sudo apt-get install tlp tlp-rdw
     sudo apt-get install tp-smapi-dkms acpi-call-dkms
 
-    echo -e "Install CJK-related packages...\n"
-    sudo apt-get install fonts-wqy-* fonts-arphic-* fcitx fcitx-sunpinyin
+ #   echo -e "Install CJK-related packages...\n"
+ #   sudo apt-get install fonts-wqy-* fonts-arphic-* fcitx fcitx-sunpinyin
 
     echo -e "Update Deb packaging details...\n"
     sudo apt-get install apt-file
@@ -47,8 +47,8 @@ fi
 echo "Clone the dotfiles repository and create soft links...\n"
 mkdir $HOME/Projects
 cd $HOME/Projects
-git clone https://github.com/kianmeng/dotfiles.git
-cd dotfiles
+git clone https://github.com/abalakersky/dotfiles.git
+cd dottfiles
 ./bin/dfm install
 cd -
 
